@@ -239,7 +239,7 @@ function updateCompareUrls(
       ? children.slice(unreleasedDefinitionIndex + 1)
       : [];
 
-  const unreleasedCompareUrl = `https://github.com/${owner}/${repo}/compare/${newTag}...HEAD`;
+  const unreleasedCompareUrl = `https://github.com/${owner}/${repo}/compare/release/${newTag}...HEAD`;
   const previousVersionCompareUrl = previousTag
     ? `https://github.com/${owner}/${repo}/compare/release/${previousTag}...release/${newTag}`
     : `https://github.com/${owner}/${repo}/compare/release/${genesisHash}...release/${newTag}`;
