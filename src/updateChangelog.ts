@@ -241,8 +241,8 @@ function updateCompareUrls(
 
   const unreleasedCompareUrl = `https://github.com/${owner}/${repo}/compare/${newTag}...HEAD`;
   const previousVersionCompareUrl = previousTag
-    ? `https://github.com/${owner}/${repo}/compare/${previousTag}...${newTag}`
-    : `https://github.com/${owner}/${repo}/compare/${genesisHash}...${newTag}`;
+    ? `https://github.com/${owner}/${repo}/compare/release/${previousTag}...release/${newTag}`
+    : `https://github.com/${owner}/${repo}/compare/release/${genesisHash}...release/${newTag}`;
 
   tree.children = [
     ...before,
